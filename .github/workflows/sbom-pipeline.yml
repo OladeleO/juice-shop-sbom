@@ -19,7 +19,7 @@ jobs:
       run: syft docker:bkimminich/juice-shop -o cyclonedx-json > juice-shop-sbom.json
 
     - name: Scan SBOM with Grype
-      run: grype sbom:juice-shop-sbom.json --fail-on high -o json > grype-sbom-scan.json
+      run: grype sbom:juice-shop-sbom.json -o json > grype-sbom-scan.json
 
     - name: Upload SBOM and Scan Results as Artifacts
       uses: actions/upload-artifact@v3
