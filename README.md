@@ -1,2 +1,2 @@
 # juice-shop-sbom
-Applyging sbom open-source tools on n image, vulnerable by design.
+Applyging sbom open-source tools on an image, vulnerable by design.
